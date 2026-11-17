@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+</head>
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">Please fill out this short survey to share your feedback with us.</p>
+
+  <form id="survey-form">
+    <label id="name-label" for="name">Name</label>
+    <input id="name" type="text" placeholder="Enter your name" required>
+
+    <br><br>
+
+    <label id="email-label" for="email">Email</label>
+    <input id="email" type="email" placeholder="Enter your email" required>
+
+    <br><br>
+
+    <label id="number-label" for="number">Age</label>
+    <input id="number" type="number" min="10" max="99" placeholder="Enter your age">
+
+    <br><br>
+
+    <label for="dropdown">How did you hear about us?</label>
+    <select id="dropdown">
+      <option value="">Select an option</option>
+      <option value="friend">Friend</option>
+      <option value="social">Social media</option>
+      <option value="other">Other</option>
+    </select>
+
+    <br><br>
+
+    <p>Would you recommend us?</p>
+    <label><input type="radio" name="recommend" value="yes"> Yes</label>
+    <label><input type="radio" name="recommend" value="no"> No</label>
+
+    <br><br>
+
+    <p>What do you like most?</p>
+    <label><input type="checkbox" name="like" value="design"> Design</label>
+    <label><input type="checkbox" name="like" value="speed"> Speed</label>
+    <label><input type="checkbox" name="like" value="support"> Support</label>
+
+    <br><br>
+
+    <label for="comments">Additional comments</label><br>
+    <textarea id="comments" rows="5" cols="40" placeholder="Enter your comments here...">
+
+    </textarea>
+
+    <br><br>
+
+    <button id="submit" type="submit">Submit</button>
+  </form>
+</body>
+</html>
